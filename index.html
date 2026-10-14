@@ -130,6 +130,17 @@
   .v2-pts-col li{display:flex;align-items:center;gap:10px;padding:12px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);line-height:1.3;color:rgba(255,255,255,.88);min-height:58px}
   .v2-pts-col .ico{width:22px;height:22px}
 }
+.hm-page .hdr .cta{background:#e5322d;border-color:#e5322d;color:#fff}
+.hm-page .hdr .cta:hover{background:#ff4a44;border-color:#ff4a44}
+.hm-cal .v2-cta{margin-top:40px}
+@media (max-width:900px){
+  .hc-pics{grid-template-columns:1fr 1fr!important}
+  .hc-pics figure:last-child{display:block!important;grid-column:1/-1;aspect-ratio:2/1}
+}
+@media (max-width:600px){
+  .hc-pics{grid-template-columns:1fr!important}
+  .hc-pics figure,.hc-pics figure:last-child{aspect-ratio:16/10;grid-column:auto}
+}
 </style>
 </head>
 <body class="hm-page">
@@ -141,7 +152,7 @@
     <b class="live" data-ps-label>Pre sale is live</b>
     <span class="hide-s">Poly $29 &middot; Glass $200 a card</span>
     <span>Offer ends in <b data-cd-text>113d 00h 00m</b></span>
-    <a href="shop.html#hero">Secure</a>
+    <a href="shop.html#hero">Claim Your Slot</a>
   </div>
 </div>
 <header class="hdr">
@@ -153,7 +164,7 @@
     <nav class="hnav" id="hnav" aria-label="Site"><a href="shop.html">Presale</a><a href="grading-standards.html">Grading Standards</a><a href="legacy.html">Legacy HGA</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
     <div class="acct">
       <a class="cart-link" href="cart.html" aria-label="Cart"><svg class="ico"><use href="#i-bag"/></svg><span class="cart-n" data-cart-count hidden>0</span></a>
-      <a class="btn cta" href="shop.html#hero">Secure Pricing</a>
+      <a class="btn cta" href="shop.html#hero">Claim Your Slot</a>
       <button class="menu-btn" type="button" data-menu aria-controls="hnav" aria-expanded="false" aria-label="Menu"><svg class="ico"><use href="#i-menu"/></svg></button>
     </div>
   </div>
@@ -169,7 +180,7 @@
       <h1 class="h1" id="hc-title"><span>We know grading sucks.</span> <span class="red">But not anymore.</span></h1>
       <p class="hc2-lede">Introducing the world’s first aerospace engineered glass card housing with RFID tracking and end to end grading transparency. Built to change how your cards are protected, graded, and tracked.</p>
       <div class="hc2-buy">
-        <a class="btn lg hm-cta" href="shop.html?h=glass#hero">Claim your Glass slot <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="btn lg hm-cta" href="shop.html?h=glass#hero">Claim Your Slot <svg class="ico"><use href="#i-arrow"/></svg></a>
       </div>
       <ul class="hc2-pts v2-pts-col">
         <li><svg class="ico" aria-hidden="true"><use href="#i-calendar"/></svg>Book the exact date for grading</li>
@@ -235,6 +246,7 @@
       <li><span class="v2-k">From Feb 1, 2027</span><b>Grading begins</b><p>Every presale grade is back within 30 days.</p></li>
     </ol>
     <p class="v2-note v2-c">If an earlier date opens, we'll move you up automatically.</p>
+    <p class="v2-cta"><a class="btn lg hm-cta" href="shop.html#hero">Claim Your Slot <svg class="ico"><use href="#i-arrow"/></svg></a></p>
   </div>
 </section>
 
@@ -253,7 +265,7 @@
       <figure><img src="./assets/gen/chip-tap.webp" alt="A phone beside an HGA Glass slab with an RFID chip" width="1200" height="896" loading="lazy"><figcaption>RFID in every slab<span class="v2-sub">Tap with your phone to pull up your card's verified record.</span></figcaption></figure>
       <figure><img src="./assets/gen/lab-loupe.webp" alt="A grader inspecting a card under a loupe" width="1200" height="896" loading="lazy"><figcaption>Graded blind<span class="v2-sub">Graders never see whose card it is, so every card is judged to one standard.</span></figcaption></figure>
     </div>
-    <p class="v2-cta"><a class="btn lg hm-cta" href="shop.html?h=glass#hero">Claim your Glass slot <svg class="ico"><use href="#i-arrow"/></svg></a></p>
+    <p class="v2-cta"><a class="btn lg hm-cta" href="shop.html?h=glass#hero">Claim Your Slot <svg class="ico"><use href="#i-arrow"/></svg></a></p>
   </div>
 </section>
 
@@ -293,6 +305,7 @@
     <ul class="hm-cal-notes">
       <li><svg class="ico"><use href="#i-users"/></svg><span><b>Dates filling up?</b> We're adding capacity. Need a card graded sooner? Buy a standard grade separately.</span></li>
     </ul>
+    <p class="v2-cta"><a class="btn lg hm-cta" href="shop.html#hero">Claim Your Slot <svg class="ico"><use href="#i-arrow"/></svg></a></p>
   </div>
 </section>
 
@@ -409,7 +422,7 @@
           <img class="hm-wm" src="./assets/hybrid_grading/hga-glass-828ebfd2.svg" alt="HGA Glass" width="96" height="16">
           <p>Aerospace glass housing for your best cards.</p>
           <p class="hm-price"><b>$200</b> <s>$600</s> <span>a card</span></p>
-          <a class="btn" href="shop.html?h=glass#hero">Claim your Glass slot</a>
+          <a class="btn" href="shop.html?h=glass#hero">Claim Your Slot</a>
         </div>
       </article>
       <article class="hm-plan">
@@ -418,7 +431,7 @@
           <img class="hm-wm" src="./assets/hybrid_grading/hga-poly-69885480.svg" alt="HGA Poly" width="88" height="16">
           <p>Professional grading at $29 a card during presale.</p>
           <p class="hm-price"><b>$29</b> <s>$150</s> <span>a card</span></p>
-          <a class="btn ghost" href="shop.html?h=poly#hero">Claim your Poly slot</a>
+          <a class="btn ghost" href="shop.html?h=poly#hero">Claim Your Slot</a>
         </div>
       </article>
     </div>
