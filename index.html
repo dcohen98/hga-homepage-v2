@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js" data-theme="dark">
 <head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>HGA Homepage v2</title>
@@ -157,15 +158,19 @@
 #why .hc-tbl td.no .ico{color:rgba(255,255,255,.3)}
 #why .hc-tbl td.yes .ico{color:#ff6b6e}
 @media (max-width:760px){
+  #why .hc-tbl-wrap{margin-top:28px}
   #why .hc-tbl,#why .hc-tbl tbody,#why .hc-tbl tr{display:block;width:100%}
   #why .hc-tbl colgroup,#why .hc-tbl thead{display:none}
-  #why .hc-tbl tbody tr{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(255,255,255,.1);border-radius:14px;overflow:hidden;margin-bottom:12px;background:rgba(255,255,255,.02)}
-  #why .hc-tbl tbody th{grid-column:1/-1;padding:14px 16px 10px;border:0;font-size:15px}
-  #why .hc-tbl td{display:block;padding:10px 16px 14px;border:0;font-size:14px}
-  #why .hc-tbl td::before{content:attr(data-l);display:block;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px;color:rgba(255,255,255,.45)}
-  #why .hc-tbl td.yes::before{color:#ff6b6e}
-  #why .hc-tbl td.yes,#why .hc-tbl tbody tr:last-child td.yes{border-radius:0}
-  #why .hc-tbl td .ico{display:none}
+  #why .hc-tbl tbody tr{padding:16px 0 18px;border-bottom:1px solid rgba(255,255,255,.1);margin:0}
+  #why .hc-tbl tbody tr:last-child{border-bottom:0}
+  #why .hc-tbl tbody th{display:block;padding:0 0 10px;border:0;font-size:16px}
+  #why .hc-tbl td{display:flex;align-items:flex-start;gap:10px;padding:5px 0;border:0;background:none;font-size:15px;line-height:1.4;border-radius:0}
+  #why .hc-tbl td::before{display:none}
+  #why .hc-tbl td.no{color:rgba(255,255,255,.5)}
+  #why .hc-tbl td.yes{color:#fff;font-weight:600}
+  #why .hc-tbl td .ico{display:block;flex:none;width:16px;height:16px;margin:3px 0 0}
+  #why .hc-tbl tbody tr:last-child td.yes{border-radius:0}
+}
 }
 </style>
 </head>
